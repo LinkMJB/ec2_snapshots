@@ -3,6 +3,7 @@ Scripts to work with EC2 snapshots
 
 Here are the bare minimum permissions the user associated with the access key creds referenced by the scripts will need:
 
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -18,3 +19,4 @@ Here are the bare minimum permissions the user associated with the access key cr
         }
     ]
 }
+```
