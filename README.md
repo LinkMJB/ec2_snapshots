@@ -20,3 +20,14 @@ Here are the bare minimum permissions the user associated with the access key cr
     ]
 }
 ```
+
+Then just setup your crontab to run the create and cleanup actions on the schedules you desire:
+
+```
+02 3 * * * /home/ubuntu/scripts/ec2/create_snapshots.sh daily
+32 3 * * * /home/ubuntu/scripts/ec2/cleanup_snapshots.sh daily 7
+02 4 * * 0 /home/ubuntu/scripts/ec2/create_snapshots.sh weekly
+32 4 * * 0 /home/ubuntu/scripts/ec2/cleanup_snapshots.sh weekly 4
+02 5 1 * * /home/ubuntu/scripts/ec2/create_snapshots.sh monthly
+32 5 1 * * /home/ubuntu/scripts/ec2/cleanup_snapshots.sh monthly 3
+```
