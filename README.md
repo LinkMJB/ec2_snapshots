@@ -4,6 +4,7 @@ Scripts to work with EC2 snapshots
 ## Prerequisites
 
 * Install AWS CLI v2: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html
+  * Looking for AWS CLI v1 compatibility? Look here: https://github.com/LinkMJB/ec2_snapshots/tree/v1
 ```
 aws configure
 ```
