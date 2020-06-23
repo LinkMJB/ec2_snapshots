@@ -1,6 +1,13 @@
 # ec2_snapshots
 Scripts to work with EC2 snapshots
 
+## Prerequisites
+
+* Install AWS CLI v2: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html
+* aws configure
+
+## Permissions
+
 Here are the bare minimum permissions the user associated with the access key creds referenced by the scripts will need:
 
 ```
